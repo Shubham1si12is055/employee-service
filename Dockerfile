@@ -7,3 +7,4 @@ FROM gcr.io/distroless/java
 COPY --from=build /usr/src/app/target/rest-service-1.0.0.jar /usr/app/rest-service-1.0.0.jar
 EXPOSE 8010
 ENTRYPOINT ["java","-jar","/usr/app/rest-service-1.0.0.jar"]
+

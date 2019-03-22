@@ -6,13 +6,10 @@ eureka:
     leaseRenewalIntervalInSeconds: 1
     leaseExpirationDurationInSeconds: 2
   client:
+    fetchRegistry: true
     serviceUrl:
       defaultZone: http://127.0.0.1:8001/eureka/
-    healthcheck:
-      enabled: true
-    lease:
-      duration: 5
-
+    
 spring:
   application:
-    name: EMPLOYEE-SERVICE
+    name: employee-service
