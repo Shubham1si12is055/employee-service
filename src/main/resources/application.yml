@@ -8,7 +8,7 @@ eureka:
   client:
     fetchRegistry: true
     serviceUrl:
-      defaultZone: http://127.0.0.1:8001/eureka/
+      defaultZone: http://discovery:8001/eureka/
     
 spring:
   application:
